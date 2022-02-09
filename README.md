@@ -9,3 +9,5 @@ Here are some popular remark plugins:
     gatsby-remark-autolink-headers: Automatically create links for all the headers in your Markdown content.
 
 Try searching for gatsby-remark- in the Gatsby Plugin Library for a full list.
+
+https://www.gatsbyjs.com/docs/tutorial/part-7/
