@@ -1,19 +1,19 @@
 module.exports = {
 	siteMetadata: {
-		title: `RyanJT Blog`,
-		siteUrl: `https://www.yourdomain.tld`,
+		siteUrl: 'https://www.yourdomain.tld',
+		title: 'RyanJT Blog',
 	},
 	plugins: [
 		'gatsby-plugin-image',
 		'gatsby-plugin-sharp',
-		'gatsby-transformer-sharp',
 		{
-			resolve: 'gatsby-source-filesystem',
+			resolve: `gatsby-source-filesystem`,
 			options: {
 				name: `blog`,
 				path: `${__dirname}/blog`,
 			},
 		},
 		'gatsby-plugin-mdx',
+		'gatsby-transformer-sharp',
 	],
 };

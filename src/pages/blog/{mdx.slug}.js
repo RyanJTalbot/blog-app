@@ -11,7 +11,6 @@ const BlogPost = ({ data }) => {
 		<Layout pageTitle={data.mdx.frontmatter.title}>
 			<p>{data.mdx.frontmatter.date}</p>
 			<GatsbyImage image={image} alt={data.mdx.frontmatter.hero_image_alt} />
-
 			<p>
 				Photo Credit:{' '}
 				<a href={data.mdx.frontmatter.hero_image_credit_link}>
@@ -26,7 +25,6 @@ const BlogPost = ({ data }) => {
 export const query = graphql`
 	query ($id: String) {
 		mdx(id: { eq: $id }) {
-			body
 			frontmatter {
 				title
 				date(formatString: "MMMM DD, YYYY")
@@ -39,6 +37,7 @@ export const query = graphql`
 					}
 				}
 			}
+			body
 		}
 	}
 `;
